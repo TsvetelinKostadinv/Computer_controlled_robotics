@@ -19,6 +19,7 @@ Most solutions that track motion of hands, legs or even the whole body make use 
 - Motors for the movement
   - Technically we can do whatever with the data, but my idea is some day equip the whole body with sensors and build a whole separate body that mimics the person wearing the set.
   - As a start we can measure just the hand(elbow and palm gestures and relative positions).
+  - Probably would need 1 for the elbow, 2 for the wrist(or some clever hack to get around it), and 5 for the digits for a total of 8 without the shoulder.
 
 ### Technologies
 The possibilities are endless. C++🤖, Java♥ and C#🤮 would be easiest for the development of the "server" computer. For the embedded system there isn't as much freedom with tech stack, so there the choice is centered around the choice of board.
@@ -41,12 +42,3 @@ Probably would be the simplest chain
    - Receives the data from the server
    - Acts according to the data - moves motors, displays info, etc.
    - Reports if there is error - moved into obstacle, battery low, etc.
-
-## Swarm robotics
-Heavier on the parts, but worth it in the end...
-
-Implement simple rules for each robot and issue high level commands and let the lower level robots handle the rest. Maybe even go one step further and make 1 robot the boss and it will have more "weight" in taking decisions.
-
-Here the minimal solution would be 3-4 small robots and 1 boss(cool idea to be a quadcopter which has more mobility)
-
-Extra step would be to make them all drones, however, it would be more expensive and time-consuming so it would be a great long term project.
